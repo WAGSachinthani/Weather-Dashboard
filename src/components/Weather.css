@@ -1,0 +1,114 @@
+/* General page styling */
+.weather-dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Title */
+.weather-dashboard h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  
+}
+
+/* Input + Button container */
+.weather-dashboard input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  width: 250px;
+  font-size: 16px;
+  margin-right: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.weather-dashboard button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #ff7e5f;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-top: 30px;
+  
+}
+
+.weather-dashboard button:hover {
+  background: #eb6750;
+  transform: translateY(-2px);
+}
+
+/* Loading and error messages */
+.weather-dashboard p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.weather-dashboard .error {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+/* Weather info card */
+.weather-info {
+  background: rgba(255, 255, 255, 0.95);
+  margin-top: 30px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.weather-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #1e3c72;
+}
+
+.weather-info p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 400px) {
+  .weather-dashboard input {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  .weather-dashboard button {
+    width: 120px;
+  }
+  .weather-info {
+    width: 90%;
+    padding: 20px;
+  }
+  .weather-info h2 {
+    font-size: 20px;
+  }
+  .weather-info p {
+    font-size: 16px;
+  }
+}
